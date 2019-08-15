@@ -1,0 +1,65 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { padding: 0; margin: 0; }
+body, button, input, select, textarea { font: 14px/1.5 "microsoft yahei", "simsun", \5b8b\4f53, arial; color: #333; }
+ul, ol, li { list-style: none; }
+i, em { font-style: normal }
+img { vertical-align: top; border: 0; }
+a { color: #333; text-decoration: none; }
+a:hover { color: #de0007; text-decoration: underline; }
+table { border-collapse: collapse; border-spacing: 0; }
+table td { padding: 0; margin: 0; }
+table th.wztop { vertical-align: top; }
+.fl, .fr { overflow: hidden; }
+.fl { float: left; }
+.fr { float: right; }
+section, article, aside, header, footer, nav, dialog, figure { display: block; padding: 0; margin: 0; }
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+.hd, .bd, .d, .inn, .inn2, .u, .u li, .pic, .tit, .con { position: relative; clear: both; overflow: hidden; }
+/*main*/
+.box{width: 968px;padding: 15px;margin: 10px auto;border: 1px solid #ccc;border-radius: 10px;}
+.box p{line-height: 40px;}
+.box p a{color: #f00;text-decoration: underline;}
+
+/*media*/
+@media (min-width:384px) {
+html { font-size: 41.4px; }
+}
+
+@media (max-width:384px) {
+html { font-size: 38.4px; }
+}
+
+@media (max-width:375px) {
+html { font-size: 37.5px; }
+}
+
+@media (max-width:360px) {
+html { font-size: 36px; }
+}
+
+@media (max-width:320px) {
+html { font-size: 32px; }
+}
+
+/*placeholder*/
+:-moz-placeholder {
+ color: #888;
+opacity:1;
+}
+::-moz-placeholder {
+ color: #888;
+opacity:1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+ color: #888;
+opacity:1;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+ color: #888;
+opacity:1;
+}
+
+/*去掉苹果的默认UI来渲染按钮*/
+input[type="submit"], input[type="reset"], input[type="button"], button, select { -webkit-appearance: none; }
+/*去掉黄色背景*/
+input, textarea, button, a { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; }
